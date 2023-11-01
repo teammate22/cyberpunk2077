@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Archangelsk;
+  src: url("fonts/Archangelsk.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("fonts/Roboto-Black.ttf");
+}
+body::-webkit-scrollbar {
+  width: 0px;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+.screen{
+  width: 100vw;
+  height: 100vh;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.sc1{
+  background-image: url('img/background-1.png');
+  background-size: cover;
+}
+.header{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#logo{
+  margin-top: 20px;
+  margin-left: 8%;
+  cursor: pointer;
+}
+#logos{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-right: 8%;
+  padding-top: 42px;
+}
+#logos > img{
+  cursor: pointer;
+}
+.slice{
+  background: linear-gradient(135deg, transparent 50px, #F8F200 0);
+}
+#yellow-div{
+  width: 625px;
+  height: 350px;
+  margin-top: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 5px;
+}
+#yellow-div > p{
+  color: #000;
+  font-family: Archangelsk;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 80px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+#yellow-div > button{
+  background-color: #000;
+  width: 270px;
+  height: 80px;
+  color: #F8F200;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  margin-left: 80px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 0px;
+}
+#yellow-div > button:hover{
+  background-color: #3c3c3c;
+}
