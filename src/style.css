@@ -6,6 +6,10 @@
   font-family: Roboto;
   src: url("/fonts/Roboto-Black.ttf");
 }
+@font-face {
+  font-family: Roboto-Light;
+  src: url("/fonts/Roboto-Light.ttf");
+}
 body::-webkit-scrollbar {
   width: 0px;
 }
@@ -28,6 +32,23 @@ body{
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
+.sc2{
+  margin-top: 95vh;
+}
+span{
+  color: #52BEDC;
+  font-family: sans-serif;
+}
+.text{
+  font-family: Roboto-Light;
+  margin-left: 120px;
+  width: 1000px;
+  color: #777;
+  font-size: 18px;
+}
+.sc2 > .archangelsk{
+  margin-left: 120px;
+}
 .header{
   display: flex;
   align-items: flex-start;
@@ -49,7 +70,17 @@ body{
   cursor: pointer;
 }
 .slice{
-  background: linear-gradient(135deg, transparent 50px, #F8F200 0);
+  clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%);
+}
+.images{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 500px;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
 }
 #yellow-div{
   width: 625px;
@@ -62,8 +93,9 @@ body{
   flex-direction: column;
   align-items: flex-start;
   border-radius: 5px;
+  background: linear-gradient(135deg, transparent 50px, #F8F200 0);
 }
-#yellow-div > p{
+.archangelsk{
   color: #000;
   font-family: Archangelsk;
   font-size: 62px;
